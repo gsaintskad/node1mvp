@@ -3,14 +3,24 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tsc index.ts && node index.js"
+    "build": "npx tsc index.ts && node index.js",
+    "dev": "nodemon --exec ts-node index.ts",
+    "delrepo": "git remote remove origin"
   },
   "keywords": [],
-  "author": "",
+  "author": "gsaintskad",
   "license": "ISC",
-  "description": "",
+  "description": "minimally configured project for a new one",
   "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.7",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "express": "^4.21.1"
   }
 }
